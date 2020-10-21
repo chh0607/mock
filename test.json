@@ -1,0 +1,136 @@
+[
+{
+	"description":"demo1=约定URI",
+	"request":{
+		"uri":"/demo1"
+		},
+	"response":{
+		"text":"Hello,demo1"
+	}
+},
+{
+	"description":"demo2=约定请求参数",
+	"request":{
+		"queries":{
+			"key1":"abc",
+			"key2":"123"
+		  }
+		},
+	"response":{
+		"text":"Hello,demo2"
+	}
+},
+
+{
+	"description":"demo3=约定请求方法",
+	"request":{
+		"method":"DELETE"
+		},
+	"response":{
+		"text":"Hello,demo3"
+	}
+},
+
+{
+	"description":"demo4=约定请求头",
+	"request":{
+		"headers":{
+			"Content-Type":"application/xml"
+			}
+		},
+	"response":{
+		"text":"Hello,demo4"
+	}
+},
+
+{
+	"description":"demo5=约定请求体参数-form",
+	"request":{
+		"forms":{
+			"key1":"abc"
+			}
+		},
+	"response":{
+		"text":"Hello,demo5"
+	}
+},
+
+{
+	"description":"demo6=约定请求体参数-json",
+	"request":{
+		"json":{
+				"key1":"value1",
+				"key2":"value2"
+			}
+		},
+	"response":{
+		"text":"Hello,demo6"
+	}
+},
+{
+	"description":"demo7=uri-startsWith匹配",
+	"request":{ 
+		"uri":{
+				"startsWith":"/sq"
+			}
+		},
+	"response":{
+		"text":"Hello,demo7"
+	}
+},
+{
+	"description":"demo8=uri-endsWith匹配",
+	"request":{ 
+		"uri":{
+				"endsWith":"sq"
+			}
+		},
+	"response":{
+		"text":"Hello,demo8"
+	}
+},
+{
+	"description":"demo9=uri-contain匹配",
+	"request":{ 
+		"uri":{
+				"contain":"fcl"
+			}
+		},
+	"response":{
+		"text":"Hello,demo9"
+	}
+},
+{
+	"description":"demo10=响应状态码",
+	"request":{ 
+		"uri":"demo10"
+		},
+	"response":{
+		"status":200
+	}
+},
+{
+	"description":"demo11=响应头",
+	"request":{ 
+		"uri":"demo11"
+		},
+	"response":{
+		"headers":{
+			"Content-Type":"application/json"
+		}
+	}
+},
+{
+	"description":"demo12=重定向",
+	"request":{ 
+		"uri":"demo12"
+		},
+	"redirectTo":"http://www.baidu.com"
+	
+}
+
+
+
+
+
+]

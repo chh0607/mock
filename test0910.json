@@ -1,0 +1,9 @@
+[{
+  "description":"demo1=约定URI",
+  "request":{
+   "uri":"/demo1"
+   },
+  "response":{
+   "text":"Hello,demo1"
+  }
+ }]

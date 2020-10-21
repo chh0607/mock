@@ -1,0 +1,203 @@
+[
+  {
+    "description":"demo999=约定uri",
+	"request":{
+		"uri":"/api/mgr/sq_mgr/" 
+	}, 
+	"response":{
+		"json":{
+			"retcode": 0,
+			"id" : 1212
+		}
+	}
+   },  
+
+ 
+
+
+
+{
+    "description":"demo1=约定uri",
+	"request":{
+		"uri":"/demo0",
+		"queries":{
+			"key1":"value1",
+			"key2":"value2"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo0,你好"
+	} 
+   },  
+
+
+   {
+    "description":"demo1=约定uri",
+	"request":{
+		"uri":"/demo1"
+	}, 
+	"response":{
+		"text":"Hello,demo1,你好"
+	} 
+   },
+   {
+    "description":"demo2=约定请求参数",
+	"request":{ 
+		"queries":{
+		"key1":"value1",
+		"key2":"value2"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo2!!!"
+	} 
+   }
+   ,
+   {
+    "description":"demo3=约定请求方法",
+	"request":{
+		"method":"delete" 
+	}, 
+	"response":{
+		"text":"Hello,demo3!!!"
+	} 
+   }
+   ,
+   {
+    "description":"demo4=约定请求头",
+	"request":{
+		"headers":{
+			"Content-Type":"application/xml"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo4!!!"
+	} 
+   }
+    
+   ,
+   {
+    "description":"demo5=约定请求消息体-form",
+	"request":{
+		"forms":{
+			"key1":"value1",
+			"key2":"value2"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo5!!!"
+	} 
+   }
+   
+   
+   ,
+   {
+    "description":"demo6=约定请求消息体-json",
+	"request":{
+		"json":{
+			"key1":"value1",
+			"key2":"value2"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo6!!!"
+	} 
+   } 
+   ,
+   {
+    "description":"demo7=约定请求URI以XX开头，且以qs结尾",
+	"request":{
+		"uri":{
+			"startsWith":"/sq"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo7!!!"
+	} 
+   },
+         
+   {
+    "description":"demo8=约定请求URI以qs结尾",
+	"request":{
+		"uri":{
+			"endsWith":"qs"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo8!!!"
+	} 
+   }
+  ,
+   {
+    "description":"demo9=约定请求URI包含某个关键字",
+	"request":{
+		"uri":{
+			"contain":"sqsq"
+		}
+	}, 
+	"response":{
+		"text":"Hello,demo9!!!"
+	} 
+   }
+  
+  ,
+   {
+    "description":"demo10=响应状态码",
+	"request":{
+		"uri":"/demo10"
+	}, 
+	"response":{
+		"status":404
+	} 
+	
+   }
+   
+   ,
+   {
+    "description":"demo11=响应头",
+	"request":{
+		"uri":"/demo11"
+	}, 
+	"response":{
+		"headers":{"Content-Type":"application/json"}
+	} 
+	
+   }
+  
+  
+   ,
+   {
+    "description":"demo12=重定向",
+	"request":{
+		"uri":"/demo12"
+	}, 
+	"redirectTo":"http://www.baidu.com"
+	
+   }
+  
+   ,
+   {
+    "description":"demo13=返回json格式的数据",
+	"request":{
+		"uri":"/demo13"
+	}, 
+	"response":{
+	"json":{"key1":"value1","key2":"value2"}
+	}
+	
+   }
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+]
